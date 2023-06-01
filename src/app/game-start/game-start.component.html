@@ -1,0 +1,13 @@
+<p>game-start works!</p>
+
+<div>
+  <h1>{{ getItem().question }}</h1>
+  <ul>
+    <li
+      *ngFor="let answer of getItem().listAnswer"
+      (click)="checkAnswer(answer)"
+    >
+      {{ answer }}
+    </li>
+  </ul>
+</div>
